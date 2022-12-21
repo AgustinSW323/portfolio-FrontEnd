@@ -1,26 +1,186 @@
-<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Agustín Olmedo - Portfolio Web</title>
-        <meta name="description" content="Roughly 155 characters">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="script.js"></script>
-        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
-    </head>
-    <body>
-        <header class="header">
-            <nav class="nav">
-            <a href="#" class="logo nav-link">Portfolio Web</a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Quien soy</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Habilidades</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Estudios</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Contacto</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agustín Olmedo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap'); </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/profile.css">
+    <link rel="stylesheet" href="CSS/skills.css">
+    <link rel="stylesheet" href="CSS/education.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <div>
+                    Portfolio Web
+                </div>
+            </a>
+            <button class="open-menu" aria-label="Abrir menú">
+                <img src="img/align-justify-svgrepo-com.svg" alt="">
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="Cerrar menú">
+                    <img src="img/x-lg-svgrepo-com.svg" alt="cerrar menú">
+                </button>
+                <li><a href="#quienSoy" class="selected">¿Quién soy?</a></li>
+                <li><a href="#educación">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        </header>
-        <!-- Content -->
-    </body>
+    </header>
+    <div class="horizontal-padding vertical-padding">
+        <section class="profile" id="quienSoy">
+            <div class="profile-info">
+                <h1 class="profile-title">Hola, soy <br/> Agustín Olmedo</h1>
+                <p class="profile-details">
+                    Soy un entusiasta y estudiante de programación
+                    con grandes expectativas de experimentar,
+                    aprender y trabajar en este hermoso mundo.
+                </p>
+                <button class="profile-btn">
+                    Descargar CV
+                </button>
+            </div>
+            <span class="profile-img-section">
+                <img class= "profile-img" src="img/craiyon_042305_ShadowWatcher323_user_profile.jpg" alt="futuro programador">
+                <div class="profile-img-line"></div>
+            </span>
+        </section>
+    </div>
+    <section class="education" id="educación">
+        <img src="img/waveStart.svg" alt="división" class="waveStart">
+        <div class="education-body">
+            <h2 class="education-title">Educación</h2>
+            <div class="education-grid">
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="studied">
+                    <div class="studied-date">2013-2017</div>
+                    <div class="studied-place">ISEP</div>
+                    <div class="studied-degree-title">Certificación</div>
+                    <div class="studied-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Facere corrupti beatae, deserunt, expedita ut molestiae
+                        excepturi quae eos asperiores provident ducimus debitis
+                        facilis commodi, sequi cumque? Quos repellendus, optio a
+                        nulla, ab dicta nobis ducimus minus atque at porro
+                        accusantium corrupti nihil, sint cumque minima labore.
+                        Sit deleniti doloribus repellat nemo odio ex voluptatibus
+                        deserunt facere! Itaque distinctio, debitis illo at sequi,
+                        dolore consequatur quibusdam veniam accusamus temporibus
+                        tenetur voluptates.</div>
+                </div>
+                <div class="studied studied_left">
+                    <div class="studied-date">2018-2021</div>
+                    <div class="studied-place">Fundación Universitas</div>
+                    <div class="studied-degree-title">Administración en Nuevas Tecnologías</div>
+                    <div class="studied-description">La Administración de nuevas tecnología está vinculada al
+                        procesamiento de los datos con el objetivo de mejorar la
+                        toma de decisiones y da lugar a organizaciones
+                        exitosas. La realidad descripta precedentemente implica
+                        la necesidad de contar con personas con capacidades
+                        vinculadas a la operación del hardware y las aplicaciones
+                        de software, así como conocimientos relacionados con
+                        las aplicaciones de Google, la tecnología digital, los
+                        sistemas multimediales, el desarrollo de sitios web y la
+                        utilización de dispositivos audiovisuales.</div>
+                </div>
+                <div class="line"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="studied">
+                    <div class="studied-date">2022-2023</div>
+                    <div class="studied-place">Argentina Programa 4.0 - #SeProgramar & #YoProgramo</div>
+                    <div class="studied-degree-title">Certificación</div>
+                    <div class="studied-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Facere corrupti beatae, deserunt, expedita ut molestiae
+                        excepturi quae eos asperiores provident ducimus debitis
+                        facilis commodi, sequi cumque? Quos repellendus, optio a
+                        nulla, ab dicta nobis ducimus minus atque at porro
+                        accusantium corrupti nihil, sint cumque minima labore.
+                        Sit deleniti doloribus repellat nemo odio ex voluptatibus
+                        deserunt facere! Itaque distinctio, debitis illo at sequi,
+                        dolore consequatur quibusdam veniam accusamus temporibus
+                        tenetur voluptates.</div>
+                </div>
+            </div>
+        </div>
+        <img src="img/waveEnd.svg" alt="división" class="waveStart waveEnd">
+    </section>
+    <div class="horizontal-padding vertical-padding">
+        <section class="skills" id="habilidades">
+            <h2 class="skills-title">Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">Habilidad 1</li>
+                <li class="skills-skill">Habilidad 2</li>
+                <li class="skills-skill">Habilidad 3</li>
+                <li class="skills-skill">Habilidad 4</li>
+        </section>
+    </div>
+    <div class="horizontal-padding vertical-padding">
+        <section class="contact" id="contacto">
+            <h2 class="contact-title">Contacto</h2>
+            <div class="contact-details">
+                <div class="contact-details-group">
+                    <p class="contact-label">Dirección</p>
+                    <p class="contact-text">Mendoza, Argentina</p>
+                </div>
+                <div class="contact-details-group">
+                    <p class="contact-label">Email</p>
+                    <p class="contact-text">aguolmedo3@gmail.com</p>
+                </div>
+                <div class="contact-details-group">
+                    <p class="contact-label">Teléfono</p>
+                    <p class="contact-text">+54 9 261303-2177</p>
+                </div>
+                
+            </div>
+            <form class="contact-form">
+                <div class="contact-form-group">
+                    <label for="name">Nombre</label>
+                    <input required type="text" name="name" id="name">
+                </div>
+                <div class="contact-form-group">
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" id="email">
+                </div>
+                <div class="contact-form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea required name="message" id="message" rows="6"></textarea>
+                </div>
+                <button type="submit" class="contact-form-submit">Enviar</button>
+            </form>
+            <nav class="social">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://github.com/AgustinSW323">
+                            <img src="img/github.svg" alt="github profile">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tter" href="https://twitter.com/">
+                            <img src="img/twitter.svg" alt="twitter profile">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ar.linkedin.com/">
+                            <img src="img/linkedin.svg" alt="linkedin profile">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</body>
 </html>
